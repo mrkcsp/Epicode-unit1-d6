@@ -1,0 +1,61 @@
+@import url('https://css.gg/border-style-dotted.css');
+
+button {
+    position: absolute;
+    border: 0;
+    opacity: 0;
+    transition: opacity 0.5s linear 0s;
+}
+
+div {
+    display: inline-block;
+    margin: 5% 30%;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.save {
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    width: 70px;
+    height: 40px
+}
+
+.arrow-up {
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 390px;
+    width: 160px;
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.share {
+    border-radius: 50%;
+    margin-left: 190px;
+    margin-top: 390px;
+    font-size: 1.5em;
+}
+
+.dots {
+    border-radius: 50%;
+    margin-left: 240px;
+    margin-top: 390px;
+    font-size: 1.5em;
+}
+
+div:hover button {
+
+    opacity: 1;
+    cursor: pointer;
+}
