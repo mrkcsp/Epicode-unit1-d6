@@ -12,11 +12,28 @@ div {
     margin: 5% 30%;
 }
 
+.overlay {
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: black;
+    opacity: 0.4;
+    width: 300px;
+    border-radius: 20px;
+    max-height: 450px;
+
+
+}
+
 img {
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
     width: 300px;
+    z-index: 1;
 }
 
 .save {
@@ -55,7 +72,12 @@ img {
 }
 
 div:hover button {
-
+    z-index: 2;
     opacity: 1;
     cursor: pointer;
+}
+
+div:hover .overlay {
+
+    z-index: 1;
 }
